@@ -19,6 +19,7 @@ $(document).ready(() => {
     }
     localStorage.setItem(`date`, JSON.stringify(array));
     var k = JSON.parse(localStorage.getItem(`date`));
+
     var months = Number(12);
     var days = Number(365);
     var hours = Number(24);
