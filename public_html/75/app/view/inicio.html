@@ -1,0 +1,50 @@
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-fm">
+        <span class="sr-only">To deploy / Hide Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <nav class="navbar navbar-inverse text-center"><h1 style="color:white;">Point 75</h1></nav>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="width: 70%;">
+  <form ng-submit="datos()">
+    <div class="row centered-form">
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class="form-group">
+          <label>Enter your age:</label>
+          <input type="text" ng-model="age" class="form-control input-sm" placeholder="Enter your age">
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <div  class="form-group">
+          <label>Civil Status:</label>
+          <input type="text" ng-model="id" class="form-control input-sm" placeholder="Enter your civil status">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <div  class="form-group">
+          <label>enter your biological gender:</label>
+          <select class="form-control" ng-model="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select><br>
+        </div>
+        </form>
+
+        <button type="submit" class="btn btn-info">Send</button>
+        <button type="reset" ng-click="reset()" class="btn btn-danger" value="reset">Reset</button>
+      </div>
+    </div>
+</div>
+</div>
+<div ng-show="text" style="font-size: 25px" class="text-center">
+  {{asd}}
+</div>
